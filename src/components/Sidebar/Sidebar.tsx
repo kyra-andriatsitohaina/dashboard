@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react';
 import MenuItem from './MenuItem';
-import DashIcon from './Icons/DashIcon';
-import UserIcon from './Icons/UserIcon';
-import SettingIcon from './Icons/SettingIcon';
+import DashIcon from '../Icons/DashIcon';
+import UserIcon from '../Icons/UserIcon';
+import SettingIcon from '../Icons/SettingIcon';
 import { AsideContext } from '../../context/AsideContext';
 
 const Sidebar = () => {
