@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       </div>
       <div id="header-nav">
         <div className={`logo ${isActive ? "collapse-logo" : ""}`}>
-          <h2>dash</h2>
+          <h2>ScreenTech</h2>
           <button onClick={()=>setIsActive(!isActive)}>
             {isActive ? <ArrowLeftIcon/> : <ArrowRightIcon/>}
           </button>
