@@ -54,11 +54,84 @@ header{
                     }
                 }
             }
-            .settings-language-theme{
+            #settings-list{
+                position: relative;
+                .settings-language-theme{
+                    display: none;
+                    position: absolute;
+                    flex-direction: column;
+                    top: 2vw;
+                    right: 1vw;
+                    padding: .5vw;
+                    width: 97% !important;
+                    li{
+                        margin-bottom: .2vw;
+                        background: $color1;
+                        padding: .2vw .5vw;
+                        border-radius: .3vw;
+                        svg{width:18px;margin-right: 1.2vw;}
+                    }
+                }
+                &:hover{
+                    .settings-language-theme{display: flex;justify-content: space-evenly;}
+
+                }
+                .list{
+                    display: flex;
+                    ul{
+                        li{
+                            padding: 0 !important;
+                            margin: 0 .2vw;
+                            button{
+                                margin: 0 !important;
+                                padding: .5vw !important;transition:.2s;
+                                svg{margin: 0;}
+                                
+                                &:hover{
+                                    svg{transform: rotate(0);}
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        ul{
+                            li{
+                                &:nth-child(1){
+                                    .color{
+                                        background: white;
+                                        &:hover{background: white !important;}
+                                        
+                                    }
+                                }
+                                &:nth-child(2){
+                                    .color{
+                                        background: black;
+                                        &:hover{background: black !important;}
+                                        
+                                    }
+                                }
+                                &:nth-child(3){
+                                    .color{
+                                        background: purple;
+                                        &:hover{background: purple !important;}
+                                    }
+                                }
+                                .color{
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: .3vw;
+                                    margin: .5vw !important;
+                                    box-shadow: 0 0 1px black;
+                                    transition: .2s;
+                                    &:hover{transform: scale(1.1);}
+
+                                }
+                            }
+                        }
+                    }
+                }
                 
             }
-        
-        
         }
     }
 }
